@@ -13,7 +13,7 @@ def print_intervals(intervals: list[float]) -> None:
         print(f"After year {i}, your investment or loan is worth ${value:.2f}")
 
 def display_intervals(intervals: list[float]) -> None:
-    x_values = list(range(1, len(intervals) + 1))
+    x_values = range(1, len(intervals) + 1)
     y_values = [round(value, 2) for value in intervals]
     sns.set()
     plt.figure(figsize=(10, 6))
